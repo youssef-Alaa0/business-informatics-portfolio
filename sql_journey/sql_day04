@@ -1,0 +1,19 @@
+Lesson 4: Introduction to Tables and Data Types
+
+A database is made up of tables, and each table is built using different data types. While we won’t go into how to actually create a table in this lesson, we will look at two of the most important data types you need to understand first.
+
+1.VARCHAR()
+
+This is used for text, letters, or words.
+
+The space inside the brackets ( ) is where you set the maximum number of characters allowed.
+
+Example: varchar(30) means the text in this column can only be up to 30 characters long.
+
+2.INT
+
+This is used for numbers (whole numbers, not decimals).
+
+Example: if a column is set as int, it can hold values like 1, 25, 300, etc.
+
+Tables are basically a combination of these data types (and others) arranged in columns. Each column is given a specific type depending on what kind of data it will store.
