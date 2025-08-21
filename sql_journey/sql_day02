@@ -1,0 +1,13 @@
+now to create a database we do the command:
+
+create database <name> 
+
+for examplei have a company called udemy and i want to name the main database
+
+so i do 
+
+create database udemy
+
+and then to make sure it's there we do as we learned in the last lesson
+
+show databases
