@@ -1,0 +1,23 @@
+Lesson 3: Deleting and Using a Database
+
+So far, we learned how to show all databases and how to create a new one. Now let’s look at two more important things: how to delete a database and how to use one.
+
+Deleting a database
+
+The command is: drop database <name>;
+
+For example, if I want to delete the Udemy database we created in the last lesson, I would write: drop database udemy;
+
+After that, I can check again with show databases; and Udemy will no longer appear in the list.
+
+Using a database
+
+If I want to work inside a specific database (like when we start adding tables later), I need to tell MySQL which database I want to use.
+
+The command is: use <database name>;
+
+For example: use udemy;
+
+To confirm which database is currently being used, I can type: select database();
+
+This command doesn’t ask for any specific table, but since I already chose one with use, it will return the name of the database I am currently working in.
