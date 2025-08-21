@@ -1,13 +1,27 @@
-now to create a database we do the command:
+Lesson 2: Creating a Database
 
-create database <name> 
+In the previous lesson, we learned how to list all the databases inside a server using:
 
-for examplei have a company called udemy and i want to name the main database
+SHOW DATABASES;
 
-so i do 
 
-create database udemy
+Now let’s go one step further and actually create a new database.
 
-and then to make sure it's there we do as we learned in the last lesson
+The command is:
 
-show databases
+CREATE DATABASE <name>;
+
+
+For example, let’s say I have a company called Udemy and I want to create a database for it. I would type:
+
+CREATE DATABASE udemy;
+
+
+Once the command runs, MySQL will add the new database to the server.
+
+To make sure it’s really there, we can run the command we learned before:
+
+SHOW DATABASES;
+
+
+This will list all the databases again, and now you should see udemy included in the list.
