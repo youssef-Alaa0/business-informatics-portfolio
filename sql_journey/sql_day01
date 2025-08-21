@@ -1,1 +1,24 @@
+Databases Explained
 
+A database system can be understood in three layers:
+
+Database Server
+This is the main machine or software that runs and manages multiple databases. For example, Microsoft could have a database server that stores many different databases at once.
+
+Databases
+Inside the server, you find the individual databases. Each one belongs to a company, app, or service. For example, Amazon might have one database, Netflix another.
+
+Database Information (Tables/Schemas)
+Within a database, the data itself is divided into different categories depending on what it’s used for. For example, Amazon’s database could include:
+
+Users (customer accounts)
+
+Payments (transactions)
+
+Locations (warehouses, delivery addresses)
+
+SQL Commands
+
+In MySQL, to see all the databases on a server, you can use:
+
+SHOW DATABASES;
