@@ -1,0 +1,17 @@
+Lesson 5: Creating a Table
+
+Before we can create a table, we first need to make sure we are inside the database we want to use. We do this with the command: use <database name>;
+
+Once the database is selected, we can create a table with the command:
+
+create table <table name>(column name datatype, column name datatype);
+
+For example, if I want to make a table called buyers with two columns (name and age), I would write:
+
+create table buyers(name varchar(10), age int);
+
+Here, name is stored as varchar(10), which means the name can only be up to 10 letters long.
+
+age is stored as int, which means it accepts whole numbers.
+
+Extra note: In most cases, for text or words we use varchar, and for numbers we use int.
