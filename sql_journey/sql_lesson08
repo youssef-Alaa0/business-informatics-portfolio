@@ -1,0 +1,15 @@
+Lesson 8: Adding Comments
+
+When writing SQL scripts, sometimes we want to leave notes or explanations that don’t actually run as commands. These are called comments.
+
+Comments are ignored by the database system — they are only there as text for humans to read.
+
+To write a comment, we use -- before the text.
+
+Example:
+
+-- hi my name is youssef and this is how to create a database
+create database youssef;
+-- now as you can see what took action was just "create database youssef"
+
+In this example, the database only executes create database youssef; while the lines starting with -- are treated as comments and not executed.
