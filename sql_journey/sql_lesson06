@@ -1,0 +1,27 @@
+Lesson 6: Showing Tables and Columns
+
+After we create a table, we should know how to check if it’s really there and also how to see its columns.
+
+Show all tables inside a database
+
+First, make sure you are inside the database with use <database name>;
+
+Then type: show tables;
+
+This will list all the tables that exist in that database.
+
+Show the columns of a table
+
+To see the structure of a table (its columns and datatypes), type: show columns from <table name>;
+
+For example: show columns from buyers;
+
+This will show the two columns we created earlier: name (varchar) and age (int).
+
+Shorter command to see columns
+
+Instead of writing show columns from …, there’s a shorter way: desc <table name>;
+
+For example: desc buyers;
+
+This does the exact same thing and shows the columns of the table.
