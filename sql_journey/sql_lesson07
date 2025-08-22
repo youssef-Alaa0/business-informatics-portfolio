@@ -1,0 +1,12 @@
+Lesson 7: Deleting a Table
+
+Sometimes we don’t need a table anymore, and in that case we can delete it completely.
+
+The command to delete a table is: drop table <table name>;
+
+For example: drop table buyers;
+
+After running this command, the table will be removed from the database.
+
+To make sure it was really deleted, we can check again using: show tables;
+This will list all the tables in the database, and the deleted table will no longer appear.
