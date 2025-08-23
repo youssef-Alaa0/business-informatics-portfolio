@@ -1,0 +1,33 @@
+Lesson 13: Understanding NULL and NOT NULL
+
+What I Did:
+When we use show columns from <table name>;, we often see the word NULL marked with YES. This means the column allows unknown values.
+
+NULL = unknown or missing value. If we don’t insert anything, the database will just leave it as NULL.
+
+To prevent this, we can add NOT NULL when creating a table.
+
+Example:
+create table students(name varchar(10) not null, age int not null);
+
+Now, if I try to insert only a name like this:
+insert into students(name) values("mari");
+→ This will lead to an error, because age was left unknown.
+
+But if I insert both values:
+insert into students(name, age) values("mari", 8);
+→ The row gets added successfully, because no column is left NULL.
+
+What I Learned:
+
+NULL means “unknown value” — not zero, not empty, but literally unknown.
+
+NOT NULL forces the database to always require a value in that column.
+
+This ensures data completeness and avoids missing information.
+
+Why It Matters in Business:
+In real companies, allowing NULL can be risky. For example, in an orders table,
+if the payment amount is NULL, the system can’t confirm if money was received.
+Using NOT NULL ensures that essential fields (like payment amount or customer ID) can never be left blank. 
+This prevents errors and keeps business records accurate.
