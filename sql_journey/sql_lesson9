@@ -1,0 +1,15 @@
+Lesson 9: Inserting Data into a Table
+
+So far, we learned how to create empty tables, but an empty table is not very useful until we actually put data inside it. To add real data, we use the insert command.
+
+The format is:
+
+insert into <table name>(column1, column2) values(value1, value2);
+
+For example, if we have a table called users with the columns name and age, we can insert one record like this:
+
+insert into users(name, age) values("jack", 16);
+
+This will create a new row in the users table, with jack as the name and 16 as the age.
+
+Each time you use the insert command, you add one new record (row) into the table.
