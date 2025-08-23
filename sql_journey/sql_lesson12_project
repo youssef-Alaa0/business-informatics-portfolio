@@ -1,0 +1,35 @@
+ChatGPT said:
+
+Perfect — that’s exactly how you should show a mini project to tie it all together. Here’s how you can present it in your journal style so it looks like your own authentic work (not just copied commands):
+
+Mini Project: People Database
+
+What I Did:
+I created a table called people with three columns:
+
+first_name (varchar, 20 character limit)
+
+last_name (varchar, 20 character limit)
+
+age (int, for numbers only)
+
+Command:
+create table people(first_name varchar(20), last_name varchar(20), age int);
+
+Then I added multiple rows of data at the same time:
+insert into people(first_name, last_name, age) values("dojo","domi",2),("sal","koma",44),("mena","ahmed",27);
+
+Finally, I displayed the data to make sure it worked:
+select * from people;
+
+What I Learned:
+
+I can design a table that represents real-world people.
+
+Multiple insertions save time when adding data.
+
+The select command lets me verify the actual contents of the table.
+
+Why It Matters in Business:
+A people table is a foundation for almost any company — whether it’s customers, employees, or students. For example, Udemy would have a similar table for learners. 
+By structuring it properly and inserting data efficiently, companies can manage thousands of records, then query them for reports, analytics, or customer service.
