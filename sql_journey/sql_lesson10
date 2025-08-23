@@ -1,0 +1,15 @@
+Lesson 10: Viewing the Data Inside a Table
+
+After inserting data into a table, we need a way to check what’s actually inside it. For this, we use the select command.
+
+The most common form is:
+
+select * from <table name>;
+
+For example, if we have a table called users and we want to see all the data inside it, we write:
+
+select * from users;
+
+This will display all the rows and columns stored in the users table.
+
+The star (*) means “everything,” so it shows all the data without needing to list each column one by one.
