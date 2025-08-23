@@ -1,0 +1,13 @@
+Lesson 11: Inserting Multiple Records at Once
+
+Before, we learned how to insert one record at a time into a table. But sometimes, instead of adding data row by row, it’s easier to add multiple records in one command.
+
+We still use the insert into command, but this time we separate each set of values with a comma.
+
+Example:
+
+insert into users(name, age) values("mike", 33), ("sara", 55), ("anna", 14);
+
+In this case, three new rows are added to the users table at once. By adding commas between each set of values, we can insert as many records as we want in a single go.
+
+This is a faster way to fill a table with data.
