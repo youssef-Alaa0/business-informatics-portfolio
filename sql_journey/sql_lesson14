@@ -1,0 +1,31 @@
+Lesson 14: Using DEFAULT Values
+
+What I Did:
+Sometimes a user doesn’t provide a value when inserting data. If we don’t want to leave it NULL, we can set a default value when creating the table.
+
+Example:
+create table dogs(name varchar(10) not null default 'unknown', age int not null);
+
+not null makes sure the column can’t stay empty.
+
+default 'unknown' means that if no value is provided, the word unknown will automatically be used.
+
+Test:
+insert into dogs(age) value(6);
+
+Then when I check with select * from dogs;, the result is:
+
+name	age
+unknown	6
+
+What I Learned:
+
+Default values prevent empty or missing data.
+
+They act as a fallback whenever no input is given.
+
+Combined with not null, this ensures the table always has relevant, complete data.
+
+Why It Matters in Business:
+Defaults make sure systems keep running smoothly even if users forget to provide some information. For example, if someone signs up for a website without uploading a profile picture,
+the system might assign a default image instead of leaving it blank. This keeps databases consistent and prevents errors in apps or reports.
