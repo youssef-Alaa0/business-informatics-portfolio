@@ -1,0 +1,33 @@
+Lesson 15: Using Primary Keys
+
+What I Did:
+To give each row in a table a unique identifier, we use the primary key command when creating the table.
+
+Example:
+create table dogs(dog_id int not null primary key, name varchar(10), age int);
+
+Then I inserted data:
+insert into dogs(dog_id, name, age) values(1, "dodo", 2);
+
+Result when I check with select * from dogs;
+
+dog_id	name	age
+1	dodo	2
+
+If I try to insert another row with the same dog_id:
+insert into dogs(dog_id, name, age) values(1, "cari", 5);
+
+→ This gives an error, because primary keys must always be unique.
+
+What I Learned:
+
+Primary keys ensure each row is unique.
+
+If you try to reuse the same key, the database rejects it.
+
+This prevents duplicate or confusing records.
+
+Why It Matters in Business:
+Businesses rely on primary keys to track information without mix-ups. For example, every payment in a system needs a unique ID — 
+otherwise, two different payments could look like the same one. With primary keys, companies like banks or e-commerce sites can safely track history, link transactions,
+and make sure data integrity is always preserved.
